@@ -6,6 +6,9 @@ global:
 business-unit:
   code: '${business-unit.bu-code}${business-unit.country-code}'  
 
+app:
+  mongodb:
+    dbname: default_db
 spring:
   data:
     mongodb:
