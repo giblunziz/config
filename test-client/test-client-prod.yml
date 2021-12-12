@@ -1,2 +1,6 @@
 global:
   motd: NO MESSAGE ON PRODUCTION ENVIRONMENT !!!
+
+app:
+  mongodb:
+    server: mongodb://root:root@mongodb.atlas:27017  

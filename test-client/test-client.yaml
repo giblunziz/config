@@ -5,3 +5,8 @@ global:
 
 business-unit:
   code: '${business-unit.bu-code}${business-unit.country-code}'  
+
+spring:
+  data:
+    mongodb:
+      uri: '${app.mongodb.server}${app.mongodb.dbname}'

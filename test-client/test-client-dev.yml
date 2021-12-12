@@ -1,6 +1,9 @@
 global:
   app-type: DEV
-spring:
-  data:
-    mongodb:
-      uri: mongodb://root:root@localhost:27017/test_db  
+
+
+app:
+  mongodb:
+    server: mongodb://root:root@localhost:27017     
+    dbname: test_db
+

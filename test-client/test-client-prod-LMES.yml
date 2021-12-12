@@ -1,4 +1,0 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://root:root@mongodb.atlas:27017/lmes_db
