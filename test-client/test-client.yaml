@@ -1,8 +1,7 @@
 global:
   motd: This is the Message Of The Day!!!
   header: Welcome
-  app-type: qdd
-  bu-id: UNSET
+  app-type: QDD
 
 business-unit:
   code: '${business-unit.bu-code}${business-unit.country-code}'  
