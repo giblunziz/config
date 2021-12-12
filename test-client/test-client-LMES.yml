@@ -1,2 +1,0 @@
-business-unit:
-  code: '${business-unit.bu-code}${business-unit.country-code}'
