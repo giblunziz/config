@@ -1,4 +1,3 @@
-spring:
-  data:
-    mongodb:
-      uri: mongodb://root:root@mongodb.atlas:27017/test_db
+app:
+  mongodb:
+    server: mongodb://root:root@mongodb.atlas:27017        
