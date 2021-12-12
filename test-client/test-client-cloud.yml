@@ -1,3 +1,3 @@
 app:
   mongodb:
-    server: mongodb://root:root@mongodb.atlas:27017        
+    server: mongodb://root:root@mongodb.atlasv12:27017        
