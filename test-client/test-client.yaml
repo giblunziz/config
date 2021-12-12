@@ -12,4 +12,4 @@ app:
 spring:
   data:
     mongodb:
-      uri: '${app.mongodb.server}${app.mongodb.dbname}'
+      uri: '${app.mongodb.server}/${app.mongodb.dbname}'
