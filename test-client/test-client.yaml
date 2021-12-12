@@ -2,3 +2,4 @@ global:
   motd: This is the Message Of The Day!!!
   header: Welcome
   app-type: qdd
+  bu-id: UNSET
