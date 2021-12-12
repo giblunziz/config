@@ -1,2 +1,6 @@
-global:
-  bu-id: LMES
+business-unit:
+  country-code: ES
+  country-name: Spain
+  bu-code: LM
+  bu-name: 'Leroy Merlin'
+  code: '${business-unit.bu-code}${business-unit.country-code}'
