@@ -1,0 +1,3 @@
+app:
+  mongodb:
+    dbname: lmfr_db
