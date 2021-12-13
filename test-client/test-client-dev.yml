@@ -4,6 +4,6 @@ global:
 
 app:
   mongodb:
-    server: mongodb://root:root@localhost:27017     
+    server: mongodb://localhost:27017     
     dbname: test_db
 
