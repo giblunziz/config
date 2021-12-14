@@ -1,5 +1,5 @@
 global:
-  motd: NO MESSAGE ON PRODUCTION ENVIRONMENT !!!
+  motd: NO MESSAGE ON PRODUCTION ENVIRONMENT RELEASE 1.0.0 !!!
 
 app:
   mongodb:
