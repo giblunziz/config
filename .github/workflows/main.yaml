@@ -8,7 +8,6 @@ jobs:
     steps:
       - name: checkout version.txt
         uses: actions/checkout@v2
-        run: git checkout -- version.txt
       - name: Read file content
         id: version
         run: |
