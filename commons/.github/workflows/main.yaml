@@ -1,0 +1,10 @@
+on:
+  push:
+    paths:
+      - 'version.txt'
+jobs:
+  print-info-version:
+    runs-on: self-hosted
+    steps:
+      - name: Print file content
+        run: echo "Deploying new version"
