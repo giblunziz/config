@@ -4,7 +4,7 @@ on:
       - 'version.txt'
 jobs:
   print-info-version:
-    runs-on: self-hosted
+    runs-on: linux
     steps:
       - name: Print file content
         run: echo "Deploying new version"
