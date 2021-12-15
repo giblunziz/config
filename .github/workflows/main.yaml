@@ -6,5 +6,10 @@ jobs:
   print-info-version:
     runs-on: linux
     steps:
+      - name: Read file content
+        id: version
+        uses: juliangruber/read-file-action@v1
+        with:
+          path: version.txt
       - name: Print file content
-        run: echo "Deploying new version"
+        run: echo "Deploying new version ${{ steps.version.outputs.content }}"
