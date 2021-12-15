@@ -1,17 +1,19 @@
 on:
-  push:
-    paths:
-      - 'version.txt'
+  create:
+    tags:
+      - 'p*'
 jobs:
   print-info-version:
     runs-on: linux
     steps:
-      - name: checkout
+      - name: checkout version.txt
         uses: actions/checkout@v2
+        run: git checkout -- version.txt
       - name: Read file content
         id: version
         run: |
           content=`cat ./version.txt`
-          echo "::set-output name=versionInfo::$content"
+          echo "::set-output name=versionInfo::${content:1}"
       - name: Print file content
         run: echo "Deploying new version ${{ steps.version.outputs.versionInfo }}"
+
