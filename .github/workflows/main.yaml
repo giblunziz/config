@@ -8,8 +8,6 @@ jobs:
     steps:
       - name: Read file content
         id: version
-        uses: juliangruber/read-file-action@v1
-        with:
-          path: ./version.txt
+        run: 'cat ./version.txt'
       - name: Print file content
         run: echo "Deploying new version ${{ steps.version.outputs.content }}"
