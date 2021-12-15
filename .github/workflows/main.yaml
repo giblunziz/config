@@ -6,6 +6,8 @@ jobs:
   print-info-version:
     runs-on: linux
     steps:
+      - name: checkout
+        uses: actions/checkout@v2
       - name: Read file content
         id: version
         run: 'cat ./version.txt'
