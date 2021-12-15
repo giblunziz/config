@@ -10,6 +10,6 @@ jobs:
         id: version
         uses: juliangruber/read-file-action@v1
         with:
-          path: version.txt
+          path: ./version.txt
       - name: Print file content
         run: echo "Deploying new version ${{ steps.version.outputs.content }}"
