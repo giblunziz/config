@@ -10,6 +10,8 @@ jobs:
         uses: actions/checkout@v2
       - name: Read file content
         id: version
-        run: 'cat ./version.txt'
+        run: |
+          content=`cat ./version.txt`
+          echo "::set-output name=stambiaVersion::$content"
       - name: Print file content
-        run: echo "Deploying new version ${{ steps.version.outputs.content }}"
+        run: echo "Deploying new version ${{ steps.version.outputs.stambiaVersion }}"
