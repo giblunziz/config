@@ -12,6 +12,6 @@ jobs:
         id: version
         run: |
           content=`cat ./version.txt`
-          echo "::set-output name=stambiaVersion::$content"
+          echo "::set-output name=versionInfo::$content"
       - name: Print file content
-        run: echo "Deploying new version ${{ steps.version.outputs.stambiaVersion }}"
+        run: echo "Deploying new version ${{ steps.version.outputs.versionInfo }}"
