@@ -1,4 +1,4 @@
-name: "Déploiement stambia"
+name: "Deploy stambia"
 on:
   workflow_dispatch:
     inputs:
@@ -20,7 +20,7 @@ jobs:
     steps:
       - run: echo "Start-up"
       - uses: actions/checkout@v2
-      - uses: .github/workflows/reuse.yaml
+      - uses: .github/workflows/reuse.yaml@main
         with:
           version: ${{ github.event.inputs.sVersion }}
   print-info-version:
