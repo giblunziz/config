@@ -9,4 +9,4 @@ jobs:
   v1:
     runs-on: linux
     steps:
-      - run: echo "Deploying new version ${{ github.event.inputs.version }}"
+      - run: echo "Deploying new version ${{ inputs.version }}"

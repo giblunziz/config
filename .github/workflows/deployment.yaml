@@ -20,15 +20,13 @@ jobs:
     steps:
       - run: echo "Start-up"
       - uses: actions/checkout@v2
-      - uses: ../actions/main.yaml@v1
+      - uses: .github/workflows/reuse.yaml
         with:
           version: ${{ github.event.inputs.sVersion }}
   print-info-version:
     needs: start-up
     runs-on: linux
     steps:
-      - name: checkout
-        uses: actions/checkout@v2
       - name: Read file content
         id: version
         run: |
