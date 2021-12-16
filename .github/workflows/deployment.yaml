@@ -2,10 +2,9 @@ name: "Déploiement stambia"
 on:
   workflow_dispatch:
     inputs:
-      logLevel:
-        description: 'Log level'
+      sVersion:
+        description: 'Version'
         required: true
-        default: 'info'
       environment:
         type: choice
         description: 'Environment'
@@ -32,7 +31,7 @@ jobs:
           content=`cat ./version.txt`
           echo "::set-output name=versionInfo::${content:1}"
       - name: Print file content
-        run: echo "Deploying new version ${{ steps.version.outputs.versionInfo }} on ${{ github.event.inputs.environment }} in ${{ github.event.inputs.logLevel }}"
+        run: echo "Deploying new version ${{ steps.version.outputs.versionInfo }}/${{ github.event.inputs.sVersion }} on ${{ github.event.inputs.environment }} in ${{ github.event.inputs.logLevel }}"
   clean-up:
     needs: print-info-version
     runs-on: linux
