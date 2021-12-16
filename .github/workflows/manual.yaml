@@ -6,9 +6,14 @@ on:
         required: true
         default: 'info'
       environment:
+        type: choice
         description: 'Environment'
         required: true
         default: 'dev'
+        options:
+          - 'dev'
+          - 'pre-production'
+          - 'production'
 jobs:
   print-info-version:
     runs-on: linux
