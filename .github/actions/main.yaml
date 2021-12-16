@@ -6,7 +6,7 @@ on:
         required: true
         type: string
 jobs:
-  print-info-version:
+  v1:
     runs-on: linux
     steps:
       - run: echo "Deploying new version ${{ github.event.inputs.version }}"

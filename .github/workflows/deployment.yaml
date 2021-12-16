@@ -19,7 +19,7 @@ jobs:
     runs-on: linux
     steps:
       - run: echo "Start-up"
-      - uses: ../actions/main/print-info-version@v1
+      - uses: ../actions/main.yaml@v1
         with:
           version: ${{ github.event.inputs.sVersion }}
   print-info-version:
