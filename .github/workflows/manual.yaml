@@ -16,7 +16,9 @@ on:
           - 'production'
 jobs:
   start-up:
-
+    runs-on: linux
+    steps:
+      - run: echo "Start-up"
   print-info-version:
     needs: start-up
     runs-on: linux
@@ -32,3 +34,6 @@ jobs:
         run: echo "Deploying new version ${{ steps.version.outputs.versionInfo }} on ${{ github.event.inputs.environment }} in ${{ github.event.inputs.logLevel }}"
   clean-up:
     needs: print-info-version
+    runs-on: linux
+    steps:
+      - run: echo "clean-up"
