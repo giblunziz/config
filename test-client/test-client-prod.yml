@@ -1,9 +1,7 @@
 global:
   motd: NO MESSAGE ON PRODUCTION ENVIRONMENT !!!
-
+  app-type: Administration des ventes
 app:
   mongodb:
     server: mongodb://root:root@mongodb.atlas:27017  
 
-global:
-  app-type: Administration des ventes
