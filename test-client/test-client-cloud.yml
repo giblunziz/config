@@ -1,3 +1,5 @@
 app:
   mongodb:
     server: mongodb://root:root@mongodb.atlasv12:27017        
+global:
+  motd: "Message of the day ! Welcome on board Mohamed !"    
